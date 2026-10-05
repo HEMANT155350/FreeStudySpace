@@ -1,26 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreeStudySpace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8faf7">
+    <meta name="description" content="Find your focus with FreeStudySpace. Discover welcoming places to study, work, and get things done—for free.">
+    <title>FreeStudySpace — Find your focus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-    <!--- Header Section -->
-    <header class="navbar">
-        <img src="FreeStudySpace.jpg" width="180" height="50" class="logo">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+        <div class="nav-shell">
+            <a class="brand" href="#top" aria-label="FreeStudySpace home">
+                <img src="FreeStudySpace.jpg" alt="FreeStudySpace" width="400" height="100">
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+                <span></span><span></span>
+            </button>
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+                <a href="#space-types">Explore spaces</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#faq">FAQs</a>
+                <a class="nav-cta" href="#space-types">Find your space <span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
     </header>
 
-    
+    <main id="main">
+        <section class="hero section-wrap" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> Room to think. Space to grow.</p>
+                <h1 id="hero-title">Your next great idea needs <span>a place.</span></h1>
+                <p class="hero-description">Discover welcoming places to study, work, and focus—without spending a thing. Your perfect study spot is closer than you think.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#space-types">Explore free spaces <span aria-hidden="true">→</span></a>
+                    <a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="hero-note">
+                    <div class="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>A</span></div>
+                    <p><strong>A little more room for everyone.</strong><br>Study, create, and make yourself at home.</p>
+                </div>
+            </div>
+            <div class="hero-visual" role="img" aria-label="Illustration of a welcoming place to study">
+                <div class="visual-orbit orbit-one"></div>
+                <div class="visual-orbit orbit-two"></div>
+                <div class="plant plant-one" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+                <div class="plant plant-two" aria-hidden="true"><span></span><span></span><i></i></div>
+                <div class="desk-lamp" aria-hidden="true"><span></span><i></i></div>
+                <div class="scene">
+                    <div class="scene-window"><span></span><span></span><span></span><span></span></div>
+                    <div class="scene-shelf"><i></i><i></i><i></i><i></i><i></i></div>
+                    <div class="scene-table"><div class="book book-one"></div><div class="book book-two"></div><div class="mug"><i></i></div></div>
+                    <div class="scene-chair"><i></i></div>
+                    <div class="scene-floor"></div>
+                </div>
+                <div class="floating-card focus-card">
+                    <span class="focus-icon" aria-hidden="true">✦</span>
+                    <span><strong>Find your focus</strong><small>Your space, your pace</small></span>
+                    <span class="card-arrow" aria-hidden="true">↗</span>
+                </div>
+                <div class="floating-card free-card">
+                    <span class="free-icon" aria-hidden="true">✓</span>
+                    <span><strong>Always free</strong><small>Good things shouldn't cost</small></span>
+                </div>
+                <span class="sparkle sparkle-one" aria-hidden="true">✳</span>
+                <span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+            </div>
+        </section>
 
+        <section class="trust-strip" aria-label="What makes FreeStudySpace different">
+            <div class="trust-inner">
+                <p>More than a desk.<br><strong>A little breathing room.</strong></p>
+                <div><span class="trust-icon" aria-hidden="true">◎</span><span><strong>Open to everyone</strong><small>Find a place that welcomes you</small></span></div>
+                <div><span class="trust-icon" aria-hidden="true">♡</span><span><strong>Free to use</strong><small>Keep your budget for big ideas</small></span></div>
+                <div><span class="trust-icon" aria-hidden="true">⌁</span><span><strong>Made for focus</strong><small>Space to do your best work</small></span></div>
+            </div>
+        </section>
+
+        <section class="spaces section-wrap" id="space-types" aria-labelledby="spaces-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow"><span class="eyebrow-dot"></span> Find your kind of quiet</p>
+                    <h2 id="spaces-title">A space for every <span>kind of focus.</span></h2>
+                </div>
+                <p class="section-intro">Big project, quick reading break, or just a change of scene. Start with the kind of place that feels right.</p>
+            </div>
+            <div class="space-grid">
+                <article class="space-card card-library">
+                    <div class="space-art library-art" aria-hidden="true"><span class="art-sun"></span><span class="art-window"></span><span class="art-book book-a"></span><span class="art-book book-b"></span><span class="art-book book-c"></span><span class="art-plant"></span></div>
+                    <div class="space-card-copy"><div class="space-label"><span class="label-dot"></span> QUIET & FOCUSED</div><h3>Libraries</h3><p>Settle into a calm corner with room to read, research, and think.</p><a href="#how-it-works" aria-label="Learn how to find a library">Find your quiet <span aria-hidden="true">→</span></a></div>
+                </article>
+                <article class="space-card card-campus">
+                    <div class="space-art campus-art" aria-hidden="true"><span class="campus-sun"></span><span class="campus-building"><i></i><i></i><i></i><i></i></span><span class="campus-path"></span><span class="campus-tree tree-a"></span><span class="campus-tree tree-b"></span></div>
+                    <div class="space-card-copy"><div class="space-label"><span class="label-dot"></span> OPEN & INSPIRING</div><h3>Campus spaces</h3><p>Make the most of shared study areas and welcoming common rooms.</p><a href="#how-it-works" aria-label="Learn how to find a campus space">Explore campus <span aria-hidden="true">→</span></a></div>
+                </article>
+                <article class="space-card card-community">
+                    <div class="space-art community-art" aria-hidden="true"><span class="community-sun"></span><span class="community-room"><i></i><i></i><i></i></span><span class="community-table"></span><span class="community-chair"></span><span class="community-plant"></span></div>
+                    <div class="space-card-copy"><div class="space-label"><span class="label-dot"></span> WELCOMING & LOCAL</div><h3>Community spots</h3><p>Find a friendly neighborhood space to work, meet, or recharge.</p><a href="#how-it-works" aria-label="Learn how to find a community space">See what's nearby <span aria-hidden="true">→</span></a></div>
+                </article>
+            </div>
+            <p class="spaces-note">Space availability and access can vary—check with each location before you visit.</p>
+        </section>
+
+        <section class="how-section" id="how-it-works" aria-labelledby="how-title">
+            <div class="section-wrap how-layout">
+                <div class="how-copy">
+                    <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Your space, your way</p>
+                    <h2 id="how-title">Less searching.<br><span>More doing.</span></h2>
+                    <p>Finding somewhere to focus shouldn't be another thing on your to-do list. Here's a simple way to get started.</p>
+                    <a class="button button-light" href="#space-types">Find your starting point <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="steps">
+                    <article class="step"><span class="step-number">01</span><div><h3>Think about what you need</h3><p>Quiet for deep work? A table for a group? Start with what helps you focus.</p></div><span class="step-mark" aria-hidden="true">⌕</span></article>
+                    <article class="step"><span class="step-number">02</span><div><h3>Explore the possibilities</h3><p>Look for libraries, shared spaces, and other welcoming places in your area.</p></div><span class="step-mark" aria-hidden="true">⌖</span></article>
+                    <article class="step"><span class="step-number">03</span><div><h3>Check in, then settle in</h3><p>Confirm opening hours and access before you go. Then make the space yours.</p></div><span class="step-mark" aria-hidden="true">↗</span></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="closing section-wrap" aria-labelledby="closing-title">
+            <div class="closing-shape" aria-hidden="true"><span>✳</span><i></i></div>
+            <div><p class="eyebrow"><span class="eyebrow-dot"></span> Your next chapter starts somewhere</p><h2 id="closing-title">Make a little room<br>for <span>what's next.</span></h2></div>
+            <a class="button button-primary" href="#space-types">Explore free spaces <span aria-hidden="true">→</span></a>
+        </section>
+
+        <section class="faq-section" id="faq" aria-labelledby="faq-title">
+            <div class="section-wrap faq-layout">
+                <div><p class="eyebrow"><span class="eyebrow-dot"></span> Good to know</p><h2 id="faq-title">A few things<br>you might <span>wonder.</span></h2></div>
+                <div class="faq-list">
+                    <details><summary>What is FreeStudySpace?<span aria-hidden="true"></span></summary><p>FreeStudySpace is here to help people discover places where they can study, work, and focus without paying for a seat.</p></details>
+                    <details><summary>Are all study spaces really free?<span aria-hidden="true"></span></summary><p>We focus on spaces that are free to access, but opening hours, entry rules, and amenities can vary. Check with a location before visiting.</p></details>
+                    <details><summary>Do I need to be a student?<span aria-hidden="true"></span></summary><p>No. Everyone deserves a good place to focus, whether you're studying, working, or learning something new.</p></details>
+                    <details><summary>Can I just show up?<span aria-hidden="true"></span></summary><p>Some places welcome drop-ins, while others may have access requirements or limited hours. It's always a good idea to check first.</p></details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="brand footer-brand" href="#top" aria-label="FreeStudySpace home"><img src="FreeStudySpace.jpg" alt="" width="400" height="100"></a>
+            <p>Room to think. Space to grow.</p>
+            <nav aria-label="Footer navigation"><a href="#space-types">Explore spaces</a><a href="#how-it-works">How it works</a><a href="#faq">FAQs</a></nav>
+            <span class="footer-copyright">© <span id="current-year">2026</span> FreeStudySpace</span>
+        </div>
+    </footer>
+    <script src="app.js" defer></script>
 </body>
 </html>
