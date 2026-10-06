@@ -1085,6 +1085,27 @@ h3 {
   transition: color .2s ease;
 }
 
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 10px;
+}
+
+.footer-contact span {
+  color: #9cad9f;
+}
+
+.footer-contact a {
+  color: #d0ddd2;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.footer-contact a:hover {
+  color: #fff;
+}
+
 .footer-copyright {
   color: #9cad9f;
   font-size: 9px;
@@ -1498,6 +1519,13 @@ h3 {
 
   .footer-inner nav a {
     font-size: 10px;
+  }
+
+  .footer-contact {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
   .footer-copyright {
