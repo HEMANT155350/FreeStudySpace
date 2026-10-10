@@ -11,6 +11,19 @@
       "description": "Comprehensive notes on Electric Charges and Fields for Class 12 Physics, covering key concepts, formulas, and examples.",
       "tags": ["Electric Charges", "Electric Fields", "Class 12 Physics", "CBSE", "Physics Notes"],
       "pdf": "pdfs/class-12/physics/physics-class-12-chapter-1.pdf"
+    },
+
+    {
+      "id": "class-12-chemistry-solutions",
+      "title": "Solutions",
+      "class": 12,
+      "subject": "Chemistry",
+      "type": "notes",
+      "language": "English",
+      "board": "CBSE",
+      "description": "Comprehensive notes on Solutions for Class 12 Chemistry, covering key concepts, formulas, and examples.",
+      "tags": ["Solutions", "Class 12 Chemistry", "CBSE", "Chemistry Notes"],
+      "pdf": "pdfs/class-12/chemistry/chemistry-class-12-chapter-1.pdf"
     }
   ]
 }
