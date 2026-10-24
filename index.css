@@ -1048,6 +1048,180 @@ h3 {
   line-height: 1.75;
 }
 
+.contact-main {
+  overflow: hidden;
+}
+
+.contact-hero {
+  min-height: 470px;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  align-items: center;
+  gap: clamp(36px, 8vw, 104px);
+  padding-block: 76px;
+}
+
+.contact-copy {
+  max-width: 610px;
+}
+
+.contact-copy h1 {
+  margin-bottom: 20px;
+  font-size: clamp(44px, 5.4vw, 68px);
+  line-height: 1.08;
+  letter-spacing: -.055em;
+}
+
+.contact-copy h1 span,
+.contact-topics-heading h2 span {
+  color: var(--green);
+}
+
+.contact-intro {
+  max-width: 485px;
+  margin-bottom: 26px;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.contact-email-button {
+  min-height: 50px;
+  gap: 12px;
+  padding-inline: 19px;
+  color: var(--white);
+  background: var(--green-dark);
+}
+
+.contact-email-button:hover {
+  color: var(--white);
+  background: #245b49;
+  transform: translateY(-1px);
+}
+
+.contact-email-button i {
+  font-size: 15px;
+}
+
+.contact-email-hint {
+  margin: 11px 0 0;
+  color: #7a857b;
+  font-size: 11px;
+}
+
+.contact-card {
+  position: relative;
+  min-height: 270px;
+  overflow: hidden;
+  padding: 36px;
+  background: #e9eee6;
+  border: 1px solid #dce5da;
+  border-radius: 12px;
+}
+
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 27px;
+  color: var(--green-dark);
+  background: #d9e6d8;
+  border-radius: 50%;
+  font-size: 17px;
+}
+
+.contact-card-label {
+  margin-bottom: 9px;
+  color: #68796b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.contact-address {
+  position: relative;
+  z-index: 1;
+  color: var(--green-dark);
+  font-family: var(--serif);
+  font-size: clamp(18px, 2.1vw, 25px);
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+}
+
+.contact-card>p:last-of-type {
+  max-width: 330px;
+  margin: 14px 0 0;
+  color: #687488;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.contact-card-mark {
+  position: absolute;
+  right: 23px;
+  bottom: -36px;
+  color: #dce7d8;
+  font-size: 145px;
+  line-height: 1;
+}
+
+.contact-topics {
+  padding-block: 68px 76px;
+  background: #f0f1ec;
+}
+
+.contact-topics-heading {
+  margin-bottom: 31px;
+}
+
+.contact-topics-heading .eyebrow {
+  margin-bottom: 12px;
+}
+
+.contact-topics-heading h2 {
+  margin-bottom: 0;
+  font-size: clamp(31px, 3.7vw, 43px);
+  letter-spacing: -.04em;
+}
+
+.contact-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.contact-topic {
+  min-height: 178px;
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+
+.contact-topic>span {
+  color: #6b9676;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.contact-topic h3 {
+  margin: 19px 0 8px;
+  font-size: 15px;
+}
+
+.contact-topic p {
+  max-width: 290px;
+  margin-bottom: 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
 .site-footer {
   color: #e7eee8;
   background: #132f28;
@@ -1188,6 +1362,15 @@ h3 {
     gap: 45px;
   }
 
+  .contact-hero {
+    gap: 36px;
+    padding-block: 62px;
+  }
+
+  .contact-card {
+    padding: 28px;
+  }
+
   .footer-inner {
     width: calc(100% - 48px);
   }
@@ -1210,6 +1393,53 @@ h3 {
 
   .brand {
     width: 154px;
+  }
+
+  .contact-hero {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 31px;
+    padding-block: 49px 45px;
+  }
+
+  .contact-copy h1 {
+    max-width: 520px;
+    font-size: clamp(42px, 11vw, 58px);
+  }
+
+  .contact-intro {
+    font-size: 14px;
+  }
+
+  .contact-card {
+    min-height: 245px;
+    padding: 26px;
+  }
+
+  .contact-icon {
+    margin-bottom: 20px;
+  }
+
+  .contact-address {
+    font-size: clamp(19px, 5vw, 25px);
+  }
+
+  .contact-topics {
+    padding-block: 47px;
+  }
+
+  .contact-topic-grid {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+
+  .contact-topic {
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .contact-topic h3 {
+    margin-top: 13px;
   }
 
   .menu-toggle {
