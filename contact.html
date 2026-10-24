@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8f8f5">
+    <title>Contact Us — FreeStudySpace</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+        <div class="nav-shell">
+            <a class="brand" href="#top" aria-label="FreeStudySpace home"><img src="FreeStudySpace.jpg"
+                    alt="FreeStudySpace" width="400" height="100"></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"
+                aria-label="Open navigation"><span></span><span></span></button>
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+                <a href="index.html #notes">Browse notes</a>
+                <a href="index.html #how-it-works">How it works</a>
+                <a href="index.html #notes">Get Studying</a>
+                <a href="index.html #faq">FAQs</a>
+                <a class="nav-cta" href="contact.html">Contact<span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Contact Section -->
+    <main class="contact-main">
+        <div class="container">
+            
+            <div class="contact-header">
+                <span class="badge">GET IN TOUCH</span>
+                <h1>We'd love to hear from you.</h1>
+                <p>Have a question about our study notes, found a typo, or just want to say hello? Drop us a message below.</p>
+            </div>
+
+            <div class="contact-grid">
+                
+                <!-- Contact Form -->
+                <div class="form-wrapper">
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Alex Smith" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="alex@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="e.g., Note request for Class 10 Math">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Send Message →</button>
+                    </form>
+                </div>
+
+                <!-- Direct Info / Sidebar -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Direct Email</h3>
+                        <p>Prefer to email directly? Reach out anytime at:</p>
+                        <a href="mailto:hprjapati320@gmail.com" class="email-link">hprjapati320@gmail.com</a>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Response Time</h3>
+                        <p>We usually reply within 24–48 hours. Thanks for your patience!</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Follow Us</h3>
+                        <p>Stay updated with new study notes and guides on our socials.</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="GitHub">GitHub</a>
+                            <a href="#" aria-label="Instagram">Instagram</a>
+                            <a href="#" aria-label="YouTube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="brand footer-brand" href="#top" aria-label="FreeStudySpace home"><img src="FreeStudySpace.jpg"
+                    alt="" width="400" height="100"></a>
+            <p>Notes that make sense. Space to learn.</p>
+            <nav aria-label="Footer navigation"><a href="#notes">Browse notes</a><a href="#how-it-works">How it
+                    works</a><a href="#faq">FAQs</a></nav>
+            <!-- Social Media Links -->
+            <div class="footer-socials">
+                <a href="https://github.com/HEMANT155350" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://instagram.com/just.hemant_vibes" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/@your-channel" target="_blank" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://x.com/your-handle" target="_blank" aria-label="X (Twitter)">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+            <div class="footer-contact">
+                <span>Contact</span>
+                <a href="mailto:hprjapati320@gmail.com">hprjapati320@gmail.com</a>
+            </div>
+            <span class="footer-copyright">© <span id="current-year">2026</span> FreeStudySpace</span>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
