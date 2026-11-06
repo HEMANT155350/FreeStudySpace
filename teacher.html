@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f8f8f5">
-    <title>Teacher's Notes — FreeStudySpacet</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description"
+        content="Find teachers, save your favorites, and browse or download their study notes on FreeStudySpace.">
+    <title>Teacher's Notes — FreeStudySpace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,11 +16,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-     <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" id="top">
         <div class="nav-shell">
-            <a class="brand" href="#top" aria-label="FreeStudySpace home"><img src="FreeStudySpace.jpg"
+            <a class="brand" href="index.html" aria-label="FreeStudySpace home"><img src="FreeStudySpace.jpg"
                     alt="FreeStudySpace" width="400" height="100"></a>
             <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"
                 aria-label="Open navigation"><span></span><span></span></button>
@@ -25,32 +29,82 @@
                 <a href="index.html#notes">Browse notes</a>
                 <a href="index.html#how-it-works">How it works</a>
                 <a href="index.html#faq">FAQs</a>
-                <a class="nav-cta" href="teacher.html">Teacher's Notes<span aria-hidden="true">↗</span></a>
+                <a class="nav-cta" href="teacher.html" aria-current="page">Teacher's Notes<span
+                        aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
 
+    <main id="main">
+        <section class="notes-section section-wrap teacher-section" id="teachers" aria-labelledby="teachers-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow"><span class="eyebrow-dot"></span> Learn from your teachers</p>
+                    <h1 id="teachers-title">Teacher's <span>notes.</span></h1>
+                </div>
+                <p class="section-intro">Find teachers by name or subject, save favorites, and keep their notes close
+                    for your next study session.</p>
+            </div>
+
+            <div class="catalog-controls teacher-controls">
+                <label for="teacher-search">Search teachers
+                    <input id="teacher-search" type="search" placeholder="Type a teacher's name" autocomplete="off">
+                </label>
+                <label for="teacher-subject">Subject
+                    <select id="teacher-subject">
+                        <option value="">All subjects</option>
+                    </select>
+                </label>
+                <button class="teacher-filter-button" id="favorites-toggle" type="button" aria-pressed="false">
+                    Show favorites
+                </button>
+                <p class="result-count" id="teacher-count" aria-live="polite">Loading teachers…</p>
+            </div>
+
+            <p class="catalog-message" id="teacher-message" role="status" aria-live="polite">Loading teacher notes…</p>
+            <div class="teacher-grid" id="teacher-grid" aria-busy="true"></div>
+            <div class="empty-state teacher-empty" id="teacher-empty" role="status" aria-live="polite" hidden>
+                <span aria-hidden="true">⌕</span>
+                <h2 id="teacher-empty-title">No teachers to show yet.</h2>
+                <p id="teacher-empty-description"></p>
+            </div>
+
+            <section class="teacher-notes" id="teacher-notes" aria-labelledby="teacher-notes-title" hidden>
+                <div class="section-heading teacher-notes-heading">
+                    <div>
+                        <p class="eyebrow"><span class="eyebrow-dot"></span> Notes shelf</p>
+                        <h2 id="teacher-notes-title">Notes from your <span>teachers.</span></h2>
+                    </div>
+                    <p class="section-intro" id="teacher-notes-description"></p>
+                </div>
+                <div class="notes-grid teacher-notes-grid" id="teacher-notes-grid"></div>
+                <div class="empty-state teacher-notes-empty" id="teacher-notes-empty" role="status" aria-live="polite"
+                    hidden>
+                    <span aria-hidden="true">⌕</span>
+                    <h3 id="teacher-notes-empty-title">No notes to show.</h3>
+                    <p id="teacher-notes-empty-description"></p>
+                </div>
+            </section>
+        </section>
+    </main>
+
     <footer class="site-footer">
         <div class="footer-inner">
-            <a class="brand footer-brand" href="#top" aria-label="FreeStudySpace home"><img src="FreeStudySpace.jpg"
-                    alt="" width="400" height="100"></a>
+            <a class="brand footer-brand" href="index.html" aria-label="FreeStudySpace home"><img
+                    src="FreeStudySpace.jpg" alt="" width="400" height="100"></a>
             <p>Notes that make sense. Space to learn.</p>
-            <nav aria-label="Footer navigation"><a href="index.html#notes">Browse notes</a><a href="index.html#how-it-works">How it
-                    works</a><a href="#faq">FAQs</a><a href="contact.html">Contact</a></nav>
-            <!-- Social Media Links -->
+            <nav aria-label="Footer navigation"><a href="index.html#notes">Browse notes</a><a
+                    href="index.html#how-it-works">How it works</a><a href="index.html#faq">FAQs</a><a
+                    href="contact.html">Contact</a></nav>
             <div class="footer-socials">
-                <a href="https://github.com/HEMANT155350" target="_blank" aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://instagram.com/just.hemant_vibes" target="_blank" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://youtube.com/@your-channel" target="_blank" aria-label="YouTube">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="https://x.com/your-handle" target="_blank" aria-label="X (Twitter)">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
+                <a href="https://github.com/HEMANT155350" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://instagram.com/just.hemant_vibes" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com/@your-channel" target="_blank" rel="noopener noreferrer"
+                    aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://x.com/your-handle" target="_blank" rel="noopener noreferrer"
+                    aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
             <div class="footer-contact">
                 <span>Contact</span>
@@ -59,6 +113,11 @@
             <span class="footer-copyright">© <span id="current-year">2026</span> FreeStudySpace</span>
         </div>
     </footer>
+    <noscript>
+        <p class="noscript-message">Enable JavaScript to search teachers and browse their notes.</p>
+    </noscript>
     <script src="app.js" defer></script>
+    <script src="teacher.js" defer></script>
 </body>
+
 </html>
