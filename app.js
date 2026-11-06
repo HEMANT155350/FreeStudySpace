@@ -79,6 +79,7 @@ function isValidResource(resource) {
         && typeof resource.language === "string"
         && ["English", "Hindi", "Bilingual"].includes(resource.language)
         && (resource.description === undefined || typeof resource.description === "string")
+        && (resource.teacherName === undefined || typeof resource.teacherName === "string")
         && (resource.tags === undefined || (Array.isArray(resource.tags) && resource.tags.every((tag) => typeof tag === "string")))
         && typeof resource.pdf === "string"
         && /^pdfs\/[A-Za-z0-9._/-]+\.pdf$/i.test(resource.pdf)
